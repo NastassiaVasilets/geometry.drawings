@@ -662,39 +662,9 @@ Drawings.GeomDrawWindow = function (sandbox) {
         }
     }
     this.keynodes = new Object();
-    SCWeb.core.Server.resolveScAddr(['concept_geometric_point',
-    ], function (keynodes) {
-        self.keynodes.point = keynodes['concept_geometric_point'];
-        self.needUpdate = true;
-        self.requestUpdate();
-    });
     SCWeb.core.Server.resolveScAddr(['concept_segment',
     ], function (keynodes) {
         self.keynodes.segment = keynodes['concept_segment'];
-        self.needUpdate = true;
-        self.requestUpdate();
-    });
-    SCWeb.core.Server.resolveScAddr(['concept_straight_line',
-    ], function (keynodes) {
-        self.keynodes.line = keynodes['concept_straight_line'];
-        self.needUpdate = true;
-        self.requestUpdate();
-    });
-    SCWeb.core.Server.resolveScAddr(['concept_triangle',
-    ], function (keynodes) {
-        self.keynodes.triangle = keynodes['concept_triangle'];
-        self.needUpdate = true;
-        self.requestUpdate();
-    });
-    SCWeb.core.Server.resolveScAddr(['concept_polygon',
-    ], function (keynodes) {
-        self.keynodes.polygon = keynodes['concept_polygon'];
-        self.needUpdate = true;
-        self.requestUpdate();
-    });
-    SCWeb.core.Server.resolveScAddr(['concept_circle',
-    ], function (keynodes) {
-        self.keynodes.circle = keynodes['concept_circle'];
         self.needUpdate = true;
         self.requestUpdate();
     });
@@ -710,45 +680,9 @@ Drawings.GeomDrawWindow = function (sandbox) {
         self.needUpdate = true;
         self.requestUpdate();
     });
-    SCWeb.core.Server.resolveScAddr(['nrel_value',
-    ], function (keynodes) {
-        self.keynodes.value = keynodes['nrel_value'];
-        self.needUpdate = true;
-        self.requestUpdate();
-    });
-    SCWeb.core.Server.resolveScAddr(['nrel_length',
-    ], function (keynodes) {
-        self.keynodes.length = keynodes['nrel_length'];
-        self.needUpdate = true;
-        self.requestUpdate();
-    });
-    SCWeb.core.Server.resolveScAddr(['nrel_center_of_circle',
-    ], function (keynodes) {
-        self.keynodes.centerOfCircle = keynodes['nrel_center_of_circle'];
-        self.needUpdate = true;
-        self.requestUpdate();
-    });
-    SCWeb.core.Server.resolveScAddr(['nrel_radius',
-    ], function (keynodes) {
-        self.keynodes.radiusOfCircle = keynodes['nrel_radius'];
-        self.needUpdate = true;
-        self.requestUpdate();
-    });
-    SCWeb.core.Server.resolveScAddr(['nrel_vertex',
-    ], function (keynodes) {
-        self.keynodes.vertex = keynodes['nrel_vertex'];
-        self.needUpdate = true;
-        self.requestUpdate();
-    });
     SCWeb.core.Server.resolveScAddr(['nrel_sc_text_translation',
     ], function (keynodes) {
         self.keynodes.text_translation = keynodes['nrel_sc_text_translation'];
-        self.needUpdate = true;
-        self.requestUpdate();
-    });
-    SCWeb.core.Server.resolveScAddr(['nrel_area',
-    ], function (keynodes) {
-        self.keynodes.area = keynodes['nrel_area'];
         self.needUpdate = true;
         self.requestUpdate();
     });
